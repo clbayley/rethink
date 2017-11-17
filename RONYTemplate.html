@@ -1,0 +1,715 @@
+<!--Don't touch this section-->
+<!DOCTYPE html>
+<html lang="en" style="background:#f3f3f3 !important;">
+<head>
+	<link href="css/app.css" rel="stylesheet" type="text/css">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport">
+	<title></title><!-- <This stylesheet handles the responsiveness> -->
+	<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Cabin|Ubuntu");
+	.ExternalClass {         width: 100%; }
+	.ExternalClass,         .ExternalClass p,         .ExternalClass span,         .ExternalClass font,         .ExternalClass td,         .ExternalClass div {         line-height: 100%; }         @media only screen {         html {         min-height: 100%;         background: #ededed; } }         @media only screen and (max-width: 596px) {         .small-float-center {         margin: 0 auto !important;         float: none !important;         text-align: center !important; }         .small-text-center {         text-align: center !important; }
+	 .small-text-left {         text-align: left !important; }
+	 .small-text-right {         text-align: right !important; } }
+	   @media only screen and (max-width: 596px) {         .hide-for-large {         display: block !important;         width: auto !important;         overflow: visible !important;         max-height: none !important;         font-size: inherit !important;         line-height: inherit !important; } }         @media only screen and (max-width: 596px) {         table.body table.container .hide-for-large,         table.body table.container .row.hide-for-large {         display: table !important;         width: 100% !important; } }
+	    @media only screen and (max-width: 596px) {         table.body table.container .callout-inner.hide-for-large {         display: table-cell !important;         width: 100% !important; } }         @media only screen and (max-width: 596px) {         table.body table.container .show-for-large {         display: none !important;         width: 0;         mso-hide: all;         overflow: hidden; } }         @media only screen and (max-width: 596px) {         table.body img {         width: auto;         height: auto; }
+	        table.body center {         min-width: 0 !important; }
+	              table.body .container {         width: 100% !important; }
+	                table.body .columns,
+	                 table.body .column {         height: auto !important;         -moz-box-sizing: border-box;         -webkit-box-sizing: border-box;         box-sizing: border-box;         padding-left: 16px !important;         padding-right: 16px !important; }         table.body .columns .column,         table.body .columns .columns,         table.body .column .column,         table.body .column .columns {         padding-left: 0 !important;         padding-right: 0 !important; }         table.body .collapse .columns,
+	                         table.body .collapse .column {         padding-left: 0 !important;         padding-right: 0 !important; }         td.small-1,         th.small-1 {         display: inline-block !important;         width: 8.33333% !important; }         td.small-2,         th.small-2 {         display: inline-block !important;         width: 16.66667% !important; }         td.small-3,         th.small-3 {         display: inline-block !important;         width: 25% !important; }         td.small-4,         th.small-4 {         display: inline-block !important;         width: 33.33333% !important; }         td.small-5,         th.small-5 {         display: inline-block !important;         width: 41.66667% !important; }         td.small-6,         th.small-6 {         display: inline-block !important;         width: 50% !important; }         td.small-7,         th.small-7 {         display: inline-block !important;         width: 58.33333% !important; }
+	                            td.small-8,         th.small-8 {         display: inline-block !important;         width: 66.66667% !important; }         td.small-9,         th.small-9 {         display: inline-block !important;         width: 75% !important; }         td.small-10,         th.small-10 {         display: inline-block !important;         width: 83.33333% !important; }         td.small-11,         th.small-11 {         display: inline-block !important;         width: 91.66667% !important; }
+	                                   td.small-12,         th.small-12 {         display: inline-block !important;         width: 100% !important; }         .columns td.small-12,         .column td.small-12,         .columns th.small-12,         .column th.small-12 {         display: block !important;         width: 100% !important; }         table.body td.small-offset-1,         table.body th.small-offset-1 {         margin-left: 8.33333% !important;         Margin-left: 8.33333% !important; }         table.body td.small-offset-2,         table.body th.small-offset-2 {         margin-left: 16.66667% !important;         Margin-left: 16.66667% !important; }         table.body td.small-offset-3,         table.body th.small-offset-3 {         margin-left: 25% !important;         Margin-left: 25% !important; }         table.body td.small-offset-4,         table.body th.small-offset-4 {         margin-left: 33.33333% !important;         Margin-left: 33.33333% !important; }         table.body td.small-offset-5,         table.body th.small-offset-5 {         margin-left: 41.66667% !important;         Margin-left: 41.66667% !important; }         table.body td.small-offset-6,         table.body th.small-offset-6 {         margin-left: 50% !important;         Margin-left: 50% !important; }         table.body td.small-offset-7,         table.body th.small-offset-7 {         margin-left: 58.33333% !important;         Margin-left: 58.33333% !important; }         table.body td.small-offset-8,         table.body th.small-offset-8 {         margin-left: 66.66667% !important;         Margin-left: 66.66667% !important; }         table.body td.small-offset-9,         table.body th.small-offset-9 {         margin-left: 75% !important;         Margin-left: 75% !important; }         table.body td.small-offset-10,         table.body th.small-offset-10 {         margin-left: 83.33333% !important;         Margin-left: 83.33333% !important; }         table.body td.small-offset-11,         table.body th.small-offset-11 {         margin-left: 91.66667% !important;         Margin-left: 91.66667% !important; }         table.body table.columns td.expander,         table.body table.columns th.expander {         display: none !important; }         table.body .right-text-pad,         table.body .text-pad-right {         padding-left: 10px !important; }         table.body .left-text-pad,         table.body .text-pad-left {         padding-right: 10px !important; }         table.menu {         width: 100% !important; }         table.menu td,         table.menu th {         width: auto !important;         display: inline-block !important; }         table.menu.vertical td,         table.menu.vertical th, table.menu.small-vertical td,         table.menu.small-vertical th {         display: block !important; }         table.menu[align="center"] {         width: auto !important; }         table.button.small-expand,         table.button.small-expanded {         width: 100% !important; }         table.button.small-expand table,         table.button.small-expanded table {         width: 100%; }         table.button.small-expand table a,         table.button.small-expanded table a {         text-align: center !important;         width: 100% !important;         padding-left: 0 !important;         padding-right: 0 !important; }         table.button.small-expand center,         table.button.small-expanded center {         min-width: 0; } }         .sponsor{         display: block;         margin: 0 auto;         }
+	</style><!--[if mso]><style>    h1, body, h2, h3,h4, h5, small, p, a, li {      font-family: 'Open-Sans', sans-serif !important;    }.hero-image{ padding-top: 50px !important;}a {   border-width: 0px !important;}</style><![endif]-->
+</head><!--End don't touch section-->
+<body style='min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;width:100% !important;background:#f3f3f3 !important;'>
+	<span class="preheader" style="visibility:hidden;font-size:1px;color:#ededed;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;display:none !important;mso-hide:all !important;"></span>
+	<table class="body" style='border-spacing:0;border-collapse:collapse;vertical-align:top;background:#ededed;height:100%;width:100%;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;background:#f3f3f3 !important;'>
+		<tr style="padding:0;vertical-align:top;text-align:left;">
+			<td align="center" class="center" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;' valign="top">
+				<center data-parsed="" style="width:100%;min-width:90%;">
+					<table align="center" class="wrapper wrapper-inner float-center" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;margin:0 auto;Margin:0 auto;float:none;text-align:center;">
+						<tr style="padding:0;vertical-align:top;text-align:left;">
+							<td class="wrapper-inner" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;'>
+								<table align="center" class="container" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:90%;margin:0 auto;Margin:0 auto;text-align:inherit;">
+									<tbody>
+										<tr style="padding:0;vertical-align:top;text-align:left;">
+											<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;'>
+												<table class="row show-for-large bg-lightgrey" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;background-color:#f3f3f3;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="30px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:30px;line-height:30px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--Hero image header section-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<!--BACKGROUND IMAGE FOR HEADER-->
+															<th bgcolor="#4B5867" class="hero-image text-center small-12 large-12 columns first last" style="background-color:#4b5867;font-family:&quot;Cabin&quot;, sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;height:300px;color:white;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;text-align:center;padding-left:16px;padding-right:16px;background-size:cover !important;backgro und-repeat:no-repeat !important;background-image: url('http://rethink.events/wp-content/uploads/2017/08/HeroOfficeForEmail.jpg');">
+																<!--END BACKGROUND IMAGE FOR HEADER-->
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;font-weight:bold;text-align:center;color:#ededed;color:white;margin-top:50px;'><!--speakers of conference--> <!-- end date and location of conference--></h3>
+																			<h5 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;text-align:center;color:#ededed;'><em><!--Conference tagline--> <!--End Conference tagline--></em></h5>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:532px;">
+																				<!--Conference logo (update SRC link only)-->
+																				<a href="http://rethink.events/office"><img align="center" class="float-center" src="http://rethink.events/wp-content/uploads/2017/11/RONY-300x700.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:70%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;"></a><!--End Conference logo-->
+																			</center>
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;font-weight:bold;text-align:center;color:#ededed;color:white;margin-top:20px;'><!--speakers of conference--> November 30, 2017 | New York City <!-- end date and location of conference--></h3>
+																			<h5 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:18px;text-align:center;color:#ededed;'><em><!--Conference tagline--> The summit that connects fast-growing corporate tenants<br>
+																			and forward-thinking commercial landlords<!--End Conference tagline--></em></h5>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:532px;">
+																				<table class="button large alert radius float-center" style="border-spaacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;margin:0 auto;Margin:0 auto;float:none;text-align:center;width:auto;margin:0 0 16px 0;Margin:0 0 16px 0;">
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;'>
+																							<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																								<tr style="padding:0;vertical-align:top;text-align:left;">
+																									<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;text-align:left;color:#ffffff;background:#25a0a0;border:2px solid #40c0ff;border-radius:3px;border:none;background:#25a0a0; border:0px solid #dd1362;border-collapse:collapse !important;'><!--Header 'Register Now' button - update link only --> <a href="http://rethink.events/office/registration/" style='color:#4b5867;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;color:#40c0ff;font-family:"Cabin", sans-serif;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-block;padding:8px 16px 8px 16px;border:0 solid #40c0ff;border-radius:3px;padding:10px 20px 10px 20px;font-size:20px;border:0 solid #40c0ff;' target="_blank">Register Now</a> <!-- End header register now button --></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</center>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Header Hero Section--><!--Beginning of Highlights section-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-8 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:370.66667px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="20px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:20px;line-height:20px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<h5 style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;'><!--Salutation--> <!--End Salutation--></h5><!--Body of Email Message-->
+																			<p class="text-left" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:left;'>The future of office design has workplace executives, commercial developers and landlords developing strategies to meet the needs of the next generation workforce by enticing them with state-of-the-art office space and services. In TWO WEEKS, don't miss powerful discussions led by workplace strategists and corporate real estate executives from <strong>CIT</strong>, <strong>BuzzFeed</strong>, <strong>Airbnb</strong> and <strong>Marriott International</strong> at <a href="http://rethink.events/office/" target="_blank"><strong style="color: #4b5867;">RETHINK Office</strong></a> on November 30. Here from these power players as they discuss office design trends and major challenges and opportunities presented by upgrading old buildings and keeping up the technology, amenities and services.</p>
+																			<p class="text-left" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:left;'></p>
+																			<p style="margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;"><strong>Price Increase Tonight, November 16</strong><br></p>
+																			<p style="margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;"><strong>Advanced Registration: $399</strong><br>
+																			<strong>Full Registration: $749</strong></p><!--End Body of email message-->
+																			<p style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;'></p>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:338.66667px;">
+																				<table class="button secondary radius small-expanded float-center" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;margin:0 auto;Margin:0 auto;float:none;text-align:center;width:auto;margin:0 0 16px 0;Margin:0 0 16px 0;">
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;'>
+																							<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																								<tr style="padding:0;vertical-align:top;text-align:left;">
+																									<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;text-align:left;background:#40c0ff;border:2px solid #40c0ff;border-radius:3px;border:none;background:#613867;color:#ffffff;border:0px solid #613867;border-collapse:collapse !important;'><!--Learn more button--> <a href="http://rethink.events/office/" style='color:#4b5867;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;color:#dd1362;font-family:"Cabin", sans-serif;font-size:16px;font-weight:bold;text-decoration:none;display:inline-block;padding:8px 16px 8px 16px;border:0 solid #40c0ff;border-radius:3px;color:#ffffff;border:0 solid #613867;' target="_blank">Learn More</a> <!--End learn more button--></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table><!--Soft opt out section- you'll need to update the link--><br>
+																				<small class="text-center float-center" style="font-size:80%;color:#666666;">Not interested? Opt out by clicking <a href="http://rethink.events/wp-content/uploads/2017/09/RONY-OPTout.html" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;' target="_blank">here</a>.</small> <!--End of Soft opt out section-->
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End of Highlights Section--><!--Featured Speakers Title Section--><!--Featured Speakers Section-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<!--Begin Speaker--><!--Featured Speakers Title Section-->
+														</tr>
+													</tbody>
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-weight:bold;text-align:center;'><!--Title-->
+																			 FEATURED SPEAKERS <!--Title--></h3>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--Featured Speakers Title Section-->
+												<!--Featured Speakers Section-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<!--Begin Speaker-->
+															<th class="small-12 large-4 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:145.33333px;">
+																				<a href="#"><img align="center" class="speaker radius float-center" src="http://rethink.events/wp-content/uploads/2017/09/DanielFishbein-RONY-240x240.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-radius:3px 3px 3px 3px;"></a>
+																				<p align="center" class="text-center float-center" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;'><strong><a class="speakerlink" href="#" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#4f7cac;font-size:1.2em;'>Daniel Fishbein</a></strong><br>
+																				<small style="font-size:90%;color:#666666;"><em>Director - Global Real Estate</em><br>
+																				<strong>CIT</strong></small></p>
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th><!--end Speaker-->
+															<th class="small-12 large-4 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:145.33333px;">
+																				<a href="#"><img align="center" class="speaker radius float-center" src="http://rethink.events/wp-content/uploads/2017/10/JuliaGoldberg-RONY-240x240.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-radius:3px 3px 3px 3px;"></a>
+																				<p align="center" class="text-center float-center" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;'><strong><a class="speakerlink" href="#" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#4f7cac;font-size:1.2em;'>Julia Goldberg</a></strong><br>
+																				<small style="font-size:90%;color:#666666;"><em>VP of Real Estate, Facilities & Security</em><br>
+																				<strong>Buzzfeed</strong></small></p>
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th><!--End Speaker-->
+															<th class="small-12 large-4 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:145.33333px;">
+																				<a href="#"><img align="center" class="speaker radius float-center" src="http://rethink.events/wp-content/uploads/2017/09/TidoPesenti-RONY-240x240.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-radius:3px 3px 3px 3px;"></a>
+																				<p align="center" class="text-center float-center" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;'><strong><a class="speakerlink" href="#" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#4f7cac;font-size:1.2em;'>Tido Pesenti</a></strong><br>
+																				<small style="font-size:90%;color:#666666;"><em>Director - Global Real Estate, Procurement & Travel</em><br>
+																				<strong>Airbnb</strong></small></p>
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:145.33333px;">
+																				<a href="#"><img align="center" class="speaker radius float-center" src="http://rethink.events/wp-content/uploads/2017/09/JimYoung-RONY-240x240.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-radius:3px 3px 3px 3px;"></a>
+																				<p align="center" class="text-center float-center" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;'><strong><a class="speakerlink" href="#" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#4f7cac;font-size:1.2em;'>Jim Young</a></strong><br>
+																				<small style="font-size:90%;color:#666666;"><em>VP - Corporate Facilities, Services & Real Estate</em><br>
+																				<strong>Marriott International</strong></small></p>
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--Registration Block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="bg-primary small-12 large-6 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:274px;padding-left:8px;padding-right:8px;padding-left:16px;background-color:#ffffff !important;background-color:#ffffff !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table><!--REgister now sales copy-->
+																			<p style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;color:#000000;'>Advanced Registration: $399<br>
+																			Full Registration: $749</p><!--End Register now sales copy-->
+																		</th>
+																	</tr>
+																</table>
+															</th>
+															<th class="bg-primary small-12 large-6 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:274px;padding-left:8px;padding-right:8px;padding-right:16px;background-color:#ffffff !important;background-color:#ffffff !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<center data-parsed="" style="width:100%;min-width:90%;min-width:242px;">
+																				<table class="button expanded large alert float-center" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;margin:0 auto;Margin:0 auto;float:none;text-align:center;width:auto;margin:0 0 16px 0;Margin:0 0 16px 0;width:100% !important;">
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;border-collapse:collapse !important;'>
+																							<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																								<tr style="padding:0;vertical-align:top;text-align:left;">
+																									<td style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;font-size:16px;line-height:1.3;text-align:left;color:#ffffff;background:#40c0ff;border:2px solid #40c0ff;background:#25a0a0;border:0px solid #dd1362;border-collapse:collapse !important;'>
+																										<center data-parsed="" style="width:100%;min-width:90%;min-width:242px;min-width:0;">
+																											<!--Register now button--> <a class="float-center" href="http://rethink.events/office/registration/" style='color:#4b5867;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;color: #40c0ff;color:#ededed;font-family:"Cabin", sans-serif;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-block;padding:8px 16px 8px 16px;border:0 solid #40c0ff;border-radius:3px;padding:10px 20px 10px 20px;font-size:20px;text-align:center;width:100%;padding-left:0;padding-right:0;border:0 solid #40c0ff;' target="_blank">Register Now</a> <!--End Register Now button-->
+																										</center>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																						<td class="expander" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;border-collapse:collapse !important;padding:0 !important;'></td>
+																					</tr>
+																				</table>
+																			</center>
+																		</th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!-- End Registration Block--><!--Agenda Header Block -->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table><!--Agenda Title-->
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-weight:bold;text-align:center;'>AGENDA HIGHLIGHTS</h3><!--End Agenda title-->
+																			<p class="text-center" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;'><!--Small text - view full agenda--> <a href="http://rethink.events/office/#agenda" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;' target="_blank">View full agenda</a> <!--End small text - view full agenda--></p>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Agenda Header block--><!--Agenda Block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<!--Column 1-->
+															<th class="small-12 large-6 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:274px;padding-left:8px;padding-right:8px;padding-left:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<!--Agenda list 1-->
+																			<ul class="special-list" style='list-style-image:url("http://rethink.events/wp-content/uploads/2017/08/bulletpoint-1.png");padding-left:20px;margin-left:0px;'>
+																				<li style="padding-bottom:6px;"><strong>The Evolution of How We Work and the Office of the Future</strong></li>
+																				<li style="padding-bottom:6px;"><strong>Services & Amenities that Work</strong></li>
+																				<li style="padding-bottom:6px;"><strong>Technology, Smart Buildings & the Internet of Things</strong></li>
+																				<li style="padding-bottom:6px;"><strong>Re-Envisioning Office Design</strong></li>
+																			</ul>
+																		</th>
+																	</tr>
+																</table>
+															</th><!--End Column 1--><!--Column 2-->
+															<th class="small-12 large-6 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:274px;padding-left:8px;padding-right:8px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<!--Agenda list 2-->
+																			<ul class="special-list" style='list-style-image:url("http://rethink.events/wp-content/uploads/2017/08/bulletpoint-1.png");padding-left:20px;margin-left:0px;'>
+																				<li style="padding-bottom:6px;"><strong>Best Practices in Upgrading Old Office Product</strong></li>
+																				<li style="padding-bottom:6px;"><strong>The Real-Estate-as-a-Service Revolution</strong></li>
+																				<li style="padding-bottom:6px;"><strong>Afternoon Keynote: Marty Burger of Silverstein, Mary Ann Tighe of CBRE & Bruce MacAffer of WPP</strong></li>
+																			</ul>
+																		</th>
+																	</tr>
+																</table>
+															</th><!--End Column 2-->
+														</tr>
+													</tbody>
+												</table><!--End Agenda block--><!--Contact Header Block -->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th bgcolor='#4B5867' class="bg-grey small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-weight:bold;text-align:center;color:#fcfcfc;'>CONTACT</h3>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Contact Header Block--><!--Contact Block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<!--Contact number 1-->
+															<th bgcolor='#4B5867' class="bg-grey contacts small-12 large-12 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;padding:10px;margin:5px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;'>
+																			<!--Contact 1 information-->
+																			<p style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:center;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;color:#fcfcfc;margin-left:10px;font-size:1.1em;'><strong>Abel Devis</strong><br>
+																			Sponsorship</p>
+																			<p style="text-align:center;"><a href="mailto:abel@greenpearlevents.com" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#ededed;' target="_blank">E-mail Me</a><br>
+																			<a href="#" style="text-decoration: none; color: #fcfcfc;">(646) 862-9393</a></p><!--End Contact 1 information-->
+																		</th>
+																	</tr>
+																</table>
+															</th><!--End Contact number 1--><!--Contact Number 2-->
+															<th bgcolor='#4B5867' class="bg-grey contacts small-12 large-12 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;padding:10px;margin:5px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;'>
+																			<!--Contact 1 information-->
+																			<p style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:center;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;color:#fcfcfc;margin-left:10px;font-size:1.1em;'><strong>John Ward</strong><br>
+																			Speakers & Agenda</p>
+																			<p style="text-align:center;"><a href="mailto:jward@greenpearlevents.com" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#ededed;' target="_blank">E-mail Me</a><br>
+																			<a href="#" style="text-decoration: none; color: #fcfcfc;">(646) 755-3164</a></p><!--End Contact 1 information-->
+																		</th>
+																	</tr>
+																</table>
+															</th><!--End Contact number 2--><!--Contact Number 3-->
+															<th bgcolor='#4B5867' class="bg-grey contacts small-12 large-12 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;padding:10px;margin:5px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:center;font-size:16px;line-height:1.3;'>
+																			<!--Contact 1 information-->
+																			<p style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:center;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:20px;color:#fcfcfc;margin-left:10px;font-size:1.1em;'><strong>Maria Bauser</strong><br>
+																			Registration</p>
+																			<p style="text-align:center;"><a href="mailto:maria@greenpearlevents.com" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#ededed;' target="_blank">E-mail Me</a><br>
+																			<a href="#" style="text-decoration: none; color: #fcfcfc;">(646) 862-9395</a></p><!--End Contact 1 information-->
+																		</th><!--End Contact number 3-->
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Contact Block--><!--Sponsor Header Block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<h3 class="text-center" style='color:#4b5867;font-family:"Cabin", sans-serif;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:inherit;word-wrap:normal;font-family:"Ubuntu", sans-serif;font-weight:normal;margin-bottom:10px;Margin-bottom:10px;font-size:28px;font-weight:bold;text-align:center;'>SPONSORS</h3>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Sponsor Header Block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-4 columns first" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin'; sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><!--Top tier sponsor info. Update src with logo and change href="#" to point to sponsor's homepage--> <a href="http://www.aggressiveny.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/AggressiveEnergy-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a> <!--End Sponsor information--></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.arqui300.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/07/Arqui300_COOF_180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://www.bakerlaw.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2014/10/BakerHostetler1.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns first" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin'; sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><!--Top tier sponsor info. Update src with logo and change href="#" to point to sponsor's homepage--> <a href="http://blenderworkspace.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/BlenderWorkspace-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a> <!--End Sponsor information--></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table>
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-4 columns first" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin'; sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><!--Top tier sponsor info. Update src with logo and change href="#" to point to sponsor's homepage--> <a href="https://breather.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/07/Breather_COOF_180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a> <!--End Sponsor information--></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.ceramiassociates.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/Cerami-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.codegreensolutions.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/07/CodeGreen_COOF_180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://www.wellcertified.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/Wellness-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table>
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.ey.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/EY-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns first" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin'; sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><!--Top tier sponsor info. Update src with logo and change href="#" to point to sponsor's homepage--> <a href="http://www.jbb.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/JBB-RONY_180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a> <!--End Sponsor information--></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'><a href="https://rifiniti.com/" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;' target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/rifiniti_COOF-180X145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://serendipitylabs.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/Serendipity-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table>
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;"></tr>
+													</tbody>
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://www.steelcase.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/Steelcase-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://www.tedmoudis.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/07/Ted-Moudis_COOF_180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.vocon.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/Vocan-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'><a href="https://viewglass.com/" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;' target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/View-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table>
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;"></tr>
+													</tbody>
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://www.wework.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://emergingtrendssummit.com/wp-content/uploads/2014/10/WeWork-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="http://www.winconnectivity.com/" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/WIN-RONY-180x150.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;">
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;"><a href="https://hubs.ly/H08DsRt0" style="color:#4b5867;font-family:'Cabin', sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;" target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/WiredScore-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+															<th class="small-12 large-4 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'><a href="http://workriteergo.com/" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;' target="_blank"><img class="sponsor" src="http://rethink.events/wp-content/uploads/2017/08/WorkriteErgonomics-RONY-180x145.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;border:none;width:80%;"></a></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--Begin Fineprint block-->
+												<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th bgcolor='#4B5867' class="bg-grey small-12 large-4 columns first" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-left:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'></th>
+																	</tr>
+																</table>
+															</th>
+															<th bgcolor='#4B5867' class="bg-grey small-12 large-11 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:515.66667px;padding-left:8px;padding-right:8px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th bgcolor='#4B5867' style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																			<p class="text-left" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;color:#fcfcfc;'><!--Fine print--> <small style="font-size:80%;color:#C1C1C1;color:#fcfcfc;">Important: This email was sent to <a href="mailto:%%TO_EMAIL%%" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;line-height:1.3;color:#40c0ff;text-decoration:none;color:#dd1362;color:#ededed;' target="_blank">%%TO_EMAIL%%</a>. If you do not wish to receive any communication about any GreenPearl events, <a href="%%optout%%" style="text-decoration: none; color: #fcfcfc;">click here</a>. TO OPT OUT OF E-MAILS ABOUT THIS EVENT, <a href="http://rethink.events/wp-content/uploads/2017/09/RONY-OPTout.html" style="text-decoration: none; color: #fcfcfc;">CLICK HERE</a>.</small></p><small style="font-size:80%;color:#C1C1C1;color:#fcfcfc;"></small>
+																			<p class="text-left" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;color:#fcfcfc;'><small style="font-size:80%;color:#C1C1C1;color:#fcfcfc;"><small style="font-size:80%;color:#C1C1C1;color:#fcfcfc;">This email was sent by:</small></small></p>
+																			<p class="text-left" style='margin:0 0 0 10px;Margin:0 0 0 10px;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;Margin-bottom:10px;text-align:center;color:#fcfcfc;'><small style="font-size:80%;color:#C1C1C1;color:#fcfcfc;"><strong><a href="#" style="text-decoration:none !important; color:#ffffff !important;">GreenPearl</a><br>
+																			<strong><a href="#" style="text-decoration:none !important; color:#ffffff !important;">32 West 22nd Street, 6th Floor</a></strong><br>
+																			<strong><a href="#" style="text-decoration:none !important; color:#ffffff !important;">New York, NY 10010</a></strong><br></strong></small></p><!--End Fine print-->
+																			<p>
+																			<table class="row" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:relative;display:table;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<!--Begin GreenPearl Logo-->
+																						<th bgcolor='#4B5867' class="small-12 large-4 columns" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;'>
+																							<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																								<tr style="padding:0;vertical-align:top;text-align:center;">
+																									<th bgcolor='#4B5867' style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																										<center data-parsed="" style="width:100%;min-width:40%;min-width:30px;">
+																											<img align="center" class="speaker radius float-center" src="http://rethink.events/wp-content/uploads/2017/10/GreenPearl_Logo_White-300.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:70%;clear:both;display:block;margin:0 auto;Margin:0 auto;float:none;text-align:center;border-radius:3px 3px 3px 3px;">
+																										</center>
+																									</th>
+																								</tr>
+																							</table>
+																						</th><!--End GreenPearl Logo-->
+																					</tr>
+																				</tbody>
+																			</table>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="16px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:16px;line-height:16px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</th>
+																	</tr>
+																</table>
+															</th>
+															<th bgcolor='#4B5867' class="bg-grey small-12 large-4 columns last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;padding-top:10px;margin:0 auto;Margin:0 auto;padding-left:16px;padding-bottom:16px;width:177.33333px;padding-left:8px;padding-right:8px;padding-right:16px;background-color:#4b5867 !important;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table><!--End Fine print block--><!--Don't touch from here until end of document-->
+												<table class="row show-for-large bg-lightgrey" style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;background-color:#f3f3f3;padding:0;width:100%;position:relative;display:table;">
+													<tbody>
+														<tr style="padding:0;vertical-align:top;text-align:left;">
+															<th class="small-12 large-12 columns first last" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;margin:0 auto;Margin:0 auto;padding-bottom:16px;width:564px;padding-left:8px;padding-right:8px;padding-left:16px;padding-right:16px;'>
+																<table style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																	<tr style="padding:0;vertical-align:top;text-align:left;">
+																		<th style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;'>
+																			<table class="spacer" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%;">
+																				<tbody>
+																					<tr style="padding:0;vertical-align:top;text-align:left;">
+																						<td height="30px" style='word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;mso-line-height-rule:exactly;border-collapse:collapse !important;font-size:30px;line-height:30px;'>&#xA0;</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</th>
+																		<th class="expander" style='color:#4b5867;font-family:"Cabin", sans-serif;font-weight:normal;padding:0;margin:0;Margin:0;text-align:left;font-size:16px;line-height:1.3;visibility:hidden;width:0;padding:0 !important;'></th>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</td>
+		</tr>
+	</table><!-- prevent Gmail on iOS font size manipulation -->
+	<div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	</div>
+</body>
+</html>
